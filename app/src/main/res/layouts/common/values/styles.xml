@@ -1,0 +1,31 @@
+<resources>
+
+    <style name="text_black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="text_small" parent="text_black">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="text_small_bold" parent="text_small">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_medium" parent="text_black">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="text_medium_bold" parent="text_medium">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_Large" parent="text_black">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="text_large_bold" parent="text_Large">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="str_color">Color: %s</string>
+    <string name="str_size">Size: %d</string>
+    <string name="str_qty">Qty: %d</string>
+    <string name="str_rs">Rs. %d</string>
+    <string name="str_place_order">Place Order</string>
+    <string name="bag_total">Bag Total</string>
+    <string name="estimated_tax">Estimated Tax</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="view_details">View Details</string>
+    <string name="remove">REMOVE</string>
+    <string name="add_to_cart">Add To cart</string>
+    <string name="sort_by">Sort by</string>
+    <string name="most_viewed">Most Viewed</string>
+    <string name="most_ordered">Most Ordered</string>
+    <string name="most_shared">Most Shared</string>
+    <string name="sort">SORT</string>
+    <string name="go_to_cart">Go To Cart</string>
+    <string name="str_avaiable_in_color">Available in %s color</string>
+    <string name="available_in_size">Available in %d size</string>
+    <string name="select_similar">Select Similar</string>
+    <string name="str_ordered">Ordered by %d Peoples</string>
+    <string name="str_shared">Shared by %d Peoples</string>
+    <string name="str_viewed">Viewed by %d Peoples</string>
+    <string name="no_item_in_cart">No Item in Cart</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="product_details">Product Details</string>
+    <string name="product_list">Product List</string>
+    <string name="product_added">Product added successfully</string>
+</resources>

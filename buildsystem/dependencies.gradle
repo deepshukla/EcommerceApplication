@@ -1,0 +1,89 @@
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+
+    // Libraries
+    supportLibrary = '27.1.1'
+    timber = '4.6.1'
+    okHttp = '3.10.0'
+    gson = '2.8.5'
+    butterknife = '8.8.1'
+    loopj = '1.4.9'
+    room_version = "1.1.1"
+    rx_android = "2.0.2"
+    rx_java = "2.1.10"
+    rx_kotlin = "2.1.0"
+    rxadapter = "2.3.0"
+    rxrv = "2.0.0"
+    exrv = "1.3"
+    // Testing
+    junit = '4.12'
+    mockito = '2.15.0'
+    assertJ = '3.9.1'
+    dagger = '2.16'
+    retrofit = '2.3.0'
+    retrofitInter = '3.10.0'
+    // Instrumentation
+    testRunner = '1.0.2'
+    espresso = '3.0.2'
+    annotations = '16.0.2'
+    commonDependencies = [
+
+            expandRecycle                 : "com.thoughtbot:expandablerecyclerview:${exrv}",
+
+            // RX Android
+            rxAndroid                     : "io.reactivex.rxjava2:rxandroid:${rx_android}",
+            rxJava                        : "io.reactivex.rxjava2:rxjava:${rx_java}",
+            rxKotlin                      : "io.reactivex.rxjava2:rxkotlin:${rx_kotlin}",
+            rxjavaAdapter                 : "com.squareup.retrofit2:adapter-rxjava2:${rxadapter}",
+            rxRecycler                    : "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:${rxrv}",
+
+            // Use Retrofit for API interaction
+            retrofit                      : "com.squareup.retrofit2:retrofit:${retrofit}",
+            rfgson                        : "com.squareup.retrofit2:converter-gson:${retrofit}",
+            loggingInterceptor            : "com.squareup.okhttp3:logging-interceptor:${retrofitInter}",
+
+
+            dagger                        : "com.google.dagger:dagger:${dagger}",
+            daggerCompile                 : "com.google.dagger:dagger-compiler:${dagger}",
+
+
+            roomRuntime                   : "android.arch.persistence.room:runtime:${room_version}",
+            roomProcessor                 : "android.arch.persistence.room:compiler:${room_version}",
+            roomRxJava2                   : "android.arch.persistence.room:rxjava2:${room_version}",
+            roomTesting                   : "android.arch.persistence.room:testing:${room_version}",
+
+            supportDesign                 : "com.android.support:design:${supportLibrary}",
+            supportAppCompatV7            : "com.android.support:appcompat-v7:${supportLibrary}",
+            supportAppCompatV4            : "com.android.support:support-v4:${supportLibrary}",
+            supportRecyclerView           : "com.android.support:recyclerview-v7:${supportLibrary}",
+            supportCardView               : "com.android.support:cardview-v7:${supportLibrary}",
+
+            timber                        : "com.jakewharton.timber:timber:${timber}",
+
+
+            gson                          : "com.google.code.gson:gson:${gson}",
+
+            butterknife                   : "com.jakewharton:butterknife:${butterknife}",
+            butterknifeAnnotationProcessor: "com.jakewharton:butterknife-compiler:${butterknife}",
+            annotations                    :"org.jetbrains:annotations:${annotations}"
+
+
+
+    ]
+
+    commonTestDependencies = [
+            junit     : "junit:junit:${junit}",
+            assertj   : "org.assertj:assertj-core:${assertJ}",
+            mockito   : "org.mockito:mockito-core:${mockito}",
+
+            testRunner: "com.android.support.test:runner:${testRunner}",
+            espresso  : "com.android.support.test.espresso:espresso-core:${espresso}"
+    ]
+
+}

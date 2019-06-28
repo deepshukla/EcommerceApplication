@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+android {
+    def androidVersions = rootProject.ext.android
+    compileSdkVersion androidVersions.compileSdkVersion
+    defaultConfig {
+        applicationId "com.demo.ecommarce"
+        minSdkVersion androidVersions.minSdkVersion
+        targetSdkVersion androidVersions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs =
+                    [
+                            'src/main/res/layouts/cartdetails',
+                            'src/main/res/layouts/categorylist',
+                            'src/main/res/layouts/productdetails',
+                            'src/main/res/layouts/productlist',
+                            'src/main/res/layouts/common',
+                            'src/main/res/layouts',
+                            'src/main/res'
+                    ]
+        }
+    }
+
+}
+
+
+dependencies {
+
+    def commonDependencies = rootProject.ext.commonDependencies
+    def commonTestDependencies = rootProject.ext.commonTestDependencies
+
+    implementation commonDependencies.roomRuntime
+    annotationProcessor commonDependencies.roomProcessor
+
+    // optional - RxJava support for Room
+    implementation commonDependencies.roomRxJava2
+
+    // Test helpers
+    testImplementation commonDependencies.roomTesting
+
+
+    implementation commonDependencies.dagger
+    annotationProcessor commonDependencies.daggerCompile
+
+    // Use Retrofit for API interaction
+    implementation commonDependencies.retrofit
+    implementation commonDependencies.rfgson
+    implementation commonDependencies.loggingInterceptor
+
+    // RX Android
+    implementation commonDependencies.rxAndroid
+    implementation commonDependencies.rxJava
+    implementation commonDependencies.rxKotlin
+    implementation commonDependencies.rxjavaAdapter
+    implementation commonDependencies.rxRecycler
+
+    implementation commonDependencies.expandRecycle
+
+    //Timber for logging
+    implementation commonDependencies.timber
+    //Android
+    implementation commonDependencies.supportDesign
+    implementation commonDependencies.supportAppCompatV7
+    implementation commonDependencies.supportAppCompatV4
+    implementation commonDependencies.supportRecyclerView
+    implementation commonDependencies.supportCardView
+
+
+    //GSON
+    implementation commonDependencies.gson
+
+    implementation commonDependencies.annotations
+
+    //butterknife
+    implementation commonDependencies.butterknife
+    annotationProcessor commonDependencies.butterknifeAnnotationProcessor
+
+    //Unit testing
+    testImplementation commonTestDependencies.junit
+    testImplementation commonTestDependencies.assertj
+    testImplementation commonTestDependencies.mockito
+
+    //Instrumentation
+    androidTestImplementation commonTestDependencies.testRunner
+    androidTestImplementation commonTestDependencies.espresso
+
+}

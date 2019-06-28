@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_x2"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_base_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_x">
+
+        <TextView
+            android:id="@+id/tv_color"
+            style="@style/text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Color" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            style="@style/text_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="size" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/text_small_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="price" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

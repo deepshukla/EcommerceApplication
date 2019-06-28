@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_x2"
+    app:cardCornerRadius="@dimen/radius_x2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_x">
+
+        <LinearLayout
+            android:id="@+id/ll_base_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_x2">
+
+            <ImageView
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/template_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_x2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    style="@style/text_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tool:text="Puma Running shoes" />
+
+                <TextView
+                    android:id="@+id/tv_color"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    tool:text="Color: RED" />
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    style="@style/text_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    tool:text="Size: 36" />
+
+                <TextView
+                    android:id="@+id/tv_quantity"
+                    style="@style/text_small_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    tool:text="Qty: 1" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/text_medium_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tool:text="Rs. 1000" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_x2"
+            android:background="@color/colorSeparator" />
+
+        <Button
+            android:id="@+id/btn_remove"
+            style="@style/text_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="@string/remove" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>
